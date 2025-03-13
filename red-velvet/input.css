@@ -1,0 +1,52 @@
+/* Styling all the possible input boxes we are going to use! Clean stylesheets, woohoo! */
+.center-screen {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  font-size: 30px;
+  display: none;
+}
+
+.input-container {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.add-candle-button-container{
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  font-size: 24px;
+  border-radius: 15px;
+  display: none;
+
+}
+
+#recipientName {
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#submitName {
+  width: 100px;
+  height: 40px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#birthdayMessage{
+
+}

@@ -1,0 +1,424 @@
+body
+{
+  background-color: #555555;
+}
+
+/* !------- Create the parents ------ */
+.cakeBox /* The whole cake has 5 layers! */
+{
+  position: absolute;
+  width: 400px;
+  height: 250px;
+
+  /*border: 1px solid red;*/
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+}
+
+.plateBox /* Only for the plate */
+  /* The plate sticks to the cakeBox */
+{
+  position: absolute;
+  width: 420px;
+  height: 80px;
+
+  /*border: 1px solid red;*/
+
+  bottom: 9%;
+  left:50%;
+  transform: translate(-50%, -9%);
+
+  display: block;
+}
+
+.icingBox
+{
+  position: absolute;
+  width: 402px;
+  height: 120px;
+
+  border: 5px solid blue;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  display: block;
+}
+
+/* !------- Create the plate ------ */
+
+.plate
+{
+  position: relative;
+  width: 420px;
+  height: 80px;
+
+  background-color: #cccccc;
+  border-radius: 50%;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  z-index: 10;
+
+  box-shadow:
+    0 2px 0 #b3b3b3,
+    0 4px 0 #b3b3b3,
+    0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* !------- Create the layers of the cake ------ */
+
+.layer
+{
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 400px;
+  border-radius: 50% 50% 50% 50% / 35% 35% 50% 50%;
+}
+
+.layer-top
+{
+  position: absolute;
+  width: 400px;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+
+  z-index: 20;
+
+  background-color: #b53a36;
+
+  box-shadow:
+    0 2px 0 #862b29,
+    0 4px 0 #862b29,
+    0 6px 0 #862b29,
+    0 8px 0 #862b29,
+    0 10px 0 #862b29,
+    0 12px 0 #862b29,
+    0 14px 0 #862b29,
+    0 16px 0 #862b29,
+    0 18px 0 #862b29,
+    0 20px 0 #862b29,
+    0 22px 0 #862b29,
+    0 24px 0 #862b29,
+    0 26px 0 #862b29,
+    0 28px 0 #862b29,
+    0 30px 0 #862b29;
+}
+
+.layer-middle0
+{
+  position: absolute;
+  width: 400px;
+
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+
+  z-index: 18;
+
+  background-color: #f8f2dd;
+
+  box-shadow:
+    0 8px 0 #f3e8c4,
+    0 10px 0 #f3e8c4,
+    0 12px 0 #f3e8c4,
+    0 14px 0 #f3e8c4,
+    0 16px 0 #f3e8c4;
+}
+
+.layer-middle1
+{
+  position: absolute;
+  width: 400px;
+
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  z-index: 16;
+
+  background-color: #b53a36;
+
+  box-shadow:
+    0 2px 0 #862b29,
+    0 4px 0 #862b29,
+    0 6px 0 #862b29,
+    0 8px 0 #862b29,
+    0 10px 0 #862b29,
+    0 12px 0 #862b29,
+    0 14px 0 #862b29,
+    0 16px 0 #862b29,
+    0 18px 0 #862b29,
+    0 20px 0 #862b29,
+    0 22px 0 #862b29,
+    0 24px 0 #862b29,
+    0 26px 0 #862b29,
+    0 28px 0 #862b29,
+    0 30px 0 #862b29;
+}
+
+
+
+.layer-middle2
+{
+  position: absolute;
+  width: 400px;
+
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+  z-index: 14;
+
+  background-color: #f8f2dd;
+
+  box-shadow:
+    0 8px 0 #f3e8c4,
+    0 10px 0 #f3e8c4,
+    0 12px 0 #f3e8c4,
+    0 14px 0 #f3e8c4,
+    0 16px 0 #f3e8c4;
+}
+
+.layer-bottom
+{
+  position: absolute;
+  width: 400px;
+
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+  z-index: 12;
+
+  background-color: #b53a36;
+
+  box-shadow:
+    0 2px 0 #862b29,
+    0 4px 0 #862b29,
+    0 6px 0 #862b29,
+    0 8px 0 #862b29,
+    0 10px 0 #862b29,
+    0 12px 0 #862b29,
+    0 14px 0 #862b29,
+    0 16px 0 #862b29,
+    0 18px 0 #862b29,
+    0 20px 0 #862b29,
+    0 22px 0 #862b29,
+    0 24px 0 #862b29,
+    0 26px 0 #862b29,
+    0 28px 0 #862b29,
+    0 30px 0 #862b29;
+}
+
+
+/* !------- Create the icing, cause what is a cake without decoration! ------ */
+
+.icing
+{
+  position: relative;
+  display: block;
+  height: 50px;
+
+}
+
+.icing-top
+{
+  position: absolute;
+  width: 402px;
+  height:50px;
+  border-radius: 50% 50% 50% 50% / 35% 35% 50% 50%;
+
+  background-color: #f8f2dd;
+  box-shadow:
+    0 8px 0 #f3e8c4;
+
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, 0%);
+
+  z-index: 22;
+
+}
+
+.icing-border
+{
+  position: absolute;
+  width: 350px;
+  height: 30px;
+
+/*  border: 1px solid green;
+  border-radius: 50%;*/
+
+  top: 3%;
+  left: 50%;
+
+  transform: translate(-50%, -3%);
+
+  z-index: 23;
+}
+
+.drip
+{
+  position: absolute;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  top: 16%;
+
+  background-color: #f8f2dd;
+
+  z-index: 24;
+}
+
+.drip1 {
+  position: absolute;
+  width: 45px;
+  height: 32px;
+
+  left: 28%;
+
+  transform: skewY(15deg);
+}
+
+.drip2
+{
+  position: absolute;
+  width: 53px;
+  height: 73px;
+
+  left: 48%;
+
+  transform: skewY(-15deg);
+}
+
+.drip3
+{
+  position: absolute;
+  width: 34px;
+  height: 74px;
+
+  top: 12%;
+  right: 27%;
+
+  transform: skewY(-15deg);
+
+  background-color: #662221
+}
+
+/* !------- Create the candles, cause we have to set a normal cake apart from a birthday cake! ------ */
+/* I actually could have made another stylesheet for this as well */
+
+.candle{
+  position: relative;
+  background-color: #7B020B;
+  height: 60px;
+  width: 10px;
+  border-radius: 8px / 4px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 25;
+}
+
+.candle:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 10px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8a2432;
+}
+
+.flame
+{
+  position: absolute;
+  width: 9px;
+  height: 25px;
+
+  top: -28px;
+  left: 50%;
+  transform: translate(-50%, 28%);
+
+  background-color: #ffa500;
+  border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+  transform-origin: 50% 90%;
+
+  z-index: 26;
+
+  box-shadow:
+        0 0 10px rgba(255, 165, 0, 0.5),
+        0 0 20px rgba(255, 165, 0, 0.5),
+        0 0 60px rgba(255, 165, 0, 0.5),
+        0 0 80px rgba(255, 165, 0, 0.5);
+
+  animation: flicker 1s ease-in-out alternate infinite;
+
+}
+
+/* !------- Adding flickers of the flames, cause what is a candle without a fire! ------ */
+
+@keyframes flicker {
+  0% {
+    transform: translate(-50%, 28%) skewX(5deg);
+    box-shadow:
+      0 0 10px rgba(255, 165, 0, 0.2),
+      0 0 20px rgba(255, 165, 0, 0.2),
+      0 0 60px rgba(255, 165, 0, 0.2),
+      0 0 80px rgba(255, 165, 0, 0.2);
+  }
+  25% {
+    transform: translate(-50%, 28%) skewX(-5deg);
+    box-shadow:
+      0 0 10px rgba(255, 165, 0, 0.5),
+      0 0 20px rgba(255, 165, 0, 0.5),
+      0 0 60px rgba(255, 165, 0, 0.5),
+      0 0 80px rgba(255, 165, 0, 0.5);
+  }
+  50% {
+    transform: translate(-50%, 28%) skewX(10deg);
+    box-shadow:
+      0 0 10px rgba(255, 165, 0, 0.3),
+      0 0 20px rgba(255, 165, 0, 0.3),
+      0 0 60px rgba(255, 165, 0, 0.3),
+      0 0 80px rgba(255, 165, 0, 0.3);
+  }
+  75% {
+    transform: translate(-50%, 28%) skewX(-10deg);
+    box-shadow:
+      0 0 10px rgba(255, 165, 0, 0.4),
+      0 0 20px rgba(255, 165, 0, 0.4),
+      0 0 60px rgba(255, 165, 0, 0.4),
+      0 0 80px rgba(255, 165, 0, 0.4);
+    }
+  100% {
+    transform: translate(-50%, 28%) skewX(5deg);
+    box-shadow:
+      0 0 10px rgba(255, 165, 0, 0.5),
+      0 0 20px rgba(255, 165, 0, 0.5),
+      0 0 60px rgba(255, 165, 0, 0.5),
+      0 0 80px rgba(255, 165, 0, 0.5);
+  }
+}
+
+.hidden{
+  display: none;
+}

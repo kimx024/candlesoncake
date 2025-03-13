@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday cake: Red Velvet</title>
+
+  <!-- Link the stylesheets -->
+  <link rel="stylesheet" href="red-velvet.css">
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<!-- Start the body by layering the cake -->
+<body>
+<div id="cake" class="hidden">
+  <div class = "cakeBox">
+    <div class = "icing icing-top"></div>
+    <div class = "icing icing-border"></div>
+    <div class = "layer layer-top"></div>
+    <div class = "layer layer-middle0"></div>
+    <div class = "layer layer-middle1"></div>
+    <div class = "layer layer-middle2"></div>
+    <div class = "layer layer-bottom"></div>
+
+    <div class = "plateBox">
+      <div class = "plate"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Create some buttons -->
+<div class="input-container">
+  <label for="recipientName"></label><input type="text" id="recipientName" placeholder="Enter your name">
+  <button id="submitName">Submit</button>
+</div>
+<div id="birthdayMessage" class="center-screen"></div>
+
+<div class="add-candle-button-container">
+  <button id="add-one">+1</button>
+  <button id="add-five">+5</button>
+  <button id="add-ten">+10</button>
+</div>
+
+<div class="icing-border"></div>
+
+<!-- Actually put in some interaction through JavaScript -->
+<script src="birthday-message.js"></script>
+<script src="addCandle.js"></script>
+<script src = "blow.js"></script>
+
+</body>
+</html>
